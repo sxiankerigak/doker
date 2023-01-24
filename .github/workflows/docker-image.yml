@@ -16,5 +16,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "dapurspl" --password-stdin
-        docker image build -t dapurspl/kacang:latest .
-        docker push dapurspl/kacang:latest
+        docker image build -t dapurspl/decrypt:latest .
+        docker push dapurspl/decrypt:latest
